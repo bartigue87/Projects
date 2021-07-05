@@ -1,0 +1,45 @@
+.container {
+  width: 447px;
+  height: 300px;
+}
+
+.blue {
+  background-color: #002495;
+  width: 447px;
+  height: 100px;
+}
+.white {
+  background-color: #fff;
+  width: 447px;
+  height: 100px;
+}
+
+.red {
+  background-color: #ed2938;
+  width: 447px;
+  height: 100px;
+}
+
+.container2 {
+  margin-top: 40px;
+  width: 500px;
+  height: 300;
+}
+
+.black {
+  background-color: #000;
+  width: 500px;
+  height: 100px;
+}
+
+.redGerm {
+  background-color: #de0002;
+  width: 500px;
+  height: 100px;
+}
+
+.yellow {
+  background-color: #ffce00;
+  width: 500px;
+  height: 100px;
+}
