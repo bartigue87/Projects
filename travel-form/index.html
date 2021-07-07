@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="form">
+      <input type="text" name="firstName" placeholder="First Name" />
+      <input type="text" name="lastName" placeholder="Last Name" />
+      <input type="number" name="age" placeholder="Age" />
+      Male: <input type="radio" name="gender" value="Male" /> Female:
+      <input type="radio" name="gender" value="Female" />
+
+      <select name="locations" id="">
+        <option value="SLC">Salt Lake City</option>
+        <option value="NYC">New York City</option>
+        <option value="CHI">Chicago</option>
+      </select>
+      Vegetarian:
+      <input type="checkbox" name="diet" value="vegetarian" /> Kosher:
+      <input type="checkbox" name="diet" value="kosher" /> Lactose Free:
+      <input type="checkbox" name="diet" value="lactose" />
+      <button id="btn">Submit</button>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
