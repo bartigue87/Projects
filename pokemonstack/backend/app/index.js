@@ -10,6 +10,14 @@ app.locals.engine = engine;
 
 app.use('/pokemon', pokemonRouter);
 app.use('/generation', generationRouter);
+
+app.use((err, req, res, next) => {
+  const stausCode = err.statusCode || 500;
+  res.status(stausCode).json({
+    type: 'error',
+    message: err.message,
+  });
+});
 engine.start();
 
 module.exports = app;

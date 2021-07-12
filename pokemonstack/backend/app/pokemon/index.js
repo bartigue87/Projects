@@ -1,8 +1,9 @@
-const TRAITS = require('../data/traits');
+const TRAITS = require('../../data/traits');
 
 const DEFAULT_PROPERTIES = {
   nickname: 'unnamed',
-  get catchDate() {
+  generationId: undefined,
+  get catchdate() {
     return new Date();
   },
   get randomTraits() {
@@ -21,10 +22,11 @@ const DEFAULT_PROPERTIES = {
 };
 
 class Pokemon {
-  constructor({ catchDate, nickname, traits } = {}) {
-    this.catchDate = catchDate || DEFAULT_PROPERTIES.catchDate;
+  constructor({ catchdate, nickname, traits, generationId } = {}) {
+    this.catchdate = catchdate || DEFAULT_PROPERTIES.catchdate;
     this.nickname = nickname || DEFAULT_PROPERTIES.nickname;
     this.traits = traits || DEFAULT_PROPERTIES.randomTraits;
+    this.generationId = generationId || DEFAULT_PROPERTIES.generationId;
   }
 }
 
